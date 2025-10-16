@@ -1,0 +1,12 @@
+[project]
+name = "cube-controller-py"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "solver-core-rs",
+]
+
+[tool.uv.sources]
+solver-core-rs = { path = "../solver-core-rs", editable = true }

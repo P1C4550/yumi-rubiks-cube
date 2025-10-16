@@ -1,0 +1,22 @@
+[project]
+name = "solver-core-rs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pawel Herok", email = "pawel.herok@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.maturin]
+module-name = "solver_core_rs._core"
+python-packages = ["solver_core_rs"]
+python-source = "src"
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { file = "src/**/*.rs" }, { file = "Cargo.toml" }, { file = "Cargo.lock" }]
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"

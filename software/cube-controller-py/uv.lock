@@ -1,0 +1,19 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "cube-controller-py"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "solver-core-rs" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "solver-core-rs", editable = "../solver-core-rs" }]
+
+[[package]]
+name = "solver-core-rs"
+version = "0.1.0"
+source = { editable = "../solver-core-rs" }
