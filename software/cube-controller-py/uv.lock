@@ -17,3 +17,8 @@ requires-dist = [{ name = "solver-core-rs", editable = "../solver-core-rs" }]
 name = "solver-core-rs"
 version = "0.1.0"
 source = { editable = "../solver-core-rs" }
+
+[package.metadata]
+
+[package.metadata.requires-dev]
+dev = [{ name = "maturin", specifier = ">=1.9.6" }]
